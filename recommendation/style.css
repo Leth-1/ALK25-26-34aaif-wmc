@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+body#subpage {
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+header.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-color: #0026ff;
+    flex-wrap: wrap;
+    padding: 35px 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-style: oblique;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+}
+
+
+
+h1#Willkommen {
+    font-size: 50px;
+    color: #000000;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+p#Special {
+    font-size: 25px;
+    color: #555555;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding-left: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1#aboutus {
+    font-size: 50px;
+    color: #000000;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+p.Aboutuserklär {
+    font-size: 25px;
+    color: #555555;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding-left: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1#appit {
+    font-size: 60px;
+    color: #333333;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+    border: #0026ff solid 1px;
+    margin: 20px auto;
+}
+
+footer {
+    background-color: #0026ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+h2,
+h3 {
+    font-style: italic;
+}
+
+
+
+img.foto {
+    max-width: 100%;
+    height: auto;
+}
+
+h1#title {
+    text-align: left;
+    margin-top: 20px;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+}
+
+p#beschreibung {
+    font-size: large;
+    color: #333333;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+
+}
+
+p#address {
+    font-size: large;
+    color: #555555;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+p#bewertung {
+    font-size: large;
+    color: #777777;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+section.html {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 900px;
+    font-size: large;
+    color: rgb(0, 0, 0);
+}
+
+section#einf {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 900px;
+    text-align: left;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+.Aboutuserklär {
+    margin: 20px auto;
+    max-width: 700px;
+    color: darkred;
+    font-size: medium;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.restaurant-slider {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.restaurant-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 80%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: scale(1.05);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (min-width: 768px) {
+    .restaurant-card {
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 1024px) {
+    header.head {
+        padding: 30px 40px;
+    }
+
+    nav ul {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header.head {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1#Willkommen,
+    h1#aboutus {
+        font-size: 36px;
+    }
+
+    p#Special,
+    p.Aboutuserklär {
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    section,
+    section#einf {
+        font-size: 1rem;
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    h1#appit {
+        font-size: 40px;
+    }
+
+    .restaurant-card {
+        min-width: 80%;
+    }
+
+
+
+}
