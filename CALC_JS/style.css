@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(223, 221, 221);
+}
+
+#calculator {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: hsl(60, 56%, 90%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#Display {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: hsl(60, 56%, 90%);
+    border: none;
+    padding: 3rem 0.5rem 3rem 2rem;
+    font-size: 5rem;
+    text-align: right;
+    ;
+    color: rgb(0, 0, 0);
+
+
+
+}
+
+#Keys {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 10px;
+    padding: 10px;
+    border-top: 9px solid black;
+}
+
+
+p {
+    text-align: left;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(45, 30%, 80%);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: hsl(0, 1%, 75%);
+}
+
+button:active {
+    background-color: hsl(0, 1%, 65%);
+}
+
+.op-button {
+    background-color: hsl(40, 30%, 70%);
+}
+
+.op-button:hover {
+    background-color: hsl(40, 30%, 75%);
+}
+
+.op-button:active {
+    background-color: hsl(40, 30%, 65%);
+}
+
+.op-button1 {
+    background-color: hsl(45, 30%, 75%);
+}
+
+.op-button1:active {
+    background-color: hsl(45, 30%, 70%);
+}
+
+.op-button1:hover {
+    background-color: hsl(45, 30%, 90%);
+}
